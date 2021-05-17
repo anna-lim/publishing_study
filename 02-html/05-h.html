@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h1~h6, p, address, blockquote, hr, pre</title>
+</head>
+<body>
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+    <h3>heading 3</h3>
+    <h4>heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+    <hr>
+    <!-- hr은 이전부터 다음 내용을 구분하기 위해 가로 구분선을 그어줄때 사용함 -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat excepturi aperiam ea facere molestiae consequatur quisquam. Laudantium modi facere quae minima voluptatibus dolore molestiae delectus cupiditate beatae dolores, voluptates dicta?</p>
+    <!-- 긴 문장이나 단락을 표현할때 사용하는 태그 -->
+
+    <address>대구광역시 동구 첨단로 53 (41069) 디지털 문화본부</address>
+    <!-- 안에 p태그는 가능, h태그 외 다른 block태그 불가능 -->
+
+    <blockquote cite="https://nuli.navercorp.com/" title="Chart Library Nwagon">
+        <p>네이버 서비스의 접근성 현황을 표현하기 위한 방법 모색 중, 지침별 수준을 수치화하는 폴리곤 모양의 레이다 차트 구현의 필요성을 기반으로 Nwagon 차트 개발은 시작되었습니다. 개발 전 고려된 무료 기반의 라이브러리들은 우리가 필요로 하는 필수 기능들을 표현한 사례가 없었고, 이를 위해 간단하면서도 사용하기 쉬운 자체 차트 라이브러리를 고민하였습니다. 차트의 이름은 차트 개발의 시발점이 된 Web Accessibility의 약자인 WA와 차트의 모티브가 된 폴리곤 의 gon을 조합한 wagon으로 네이버의 N과 결합하여 최종 이름을 Nwagon으로 명명되었습니다.</p>
+        <p>Nwagon의 사용방법은 아주 간단합니다. 소스코드를 다운로드한 후 차트를 추가하고자 하는 페이지에 다음과 같이 CSS와 JS 파일을 포함시킨 후 나타내고 자 하는 정보를 차트 타입에 맞는 JSON 포맷에 맞춰주면 됩니다.</p>
+        <p>다음 링크로 접속하면 Nwagon으로 구현한 파이 차트를 볼 수 있으며, 아래의 샘플 코드를 이용해 다른 타입의 차 트도 직접 구현해 보면서 Nwagon에 대한 이해도를 만들어도 좋습니다.</p>
+        <footer>출처:<cite><a href="https://nuli.navercorp.com/">네이버 널리</a></cite></footer>
+    </blockquote>  
+    <!-- 인용문 / 출처와 요약글을 따로 적어둘 수 있음 -->
+    <!-- p,h안에는 p,h가 들어갈 수 없음 -->
+    <!-- 태그를 용도에 맞게 쓰는 것은 시멘틱 마크업에 해당되는 내용. 웹표준에선 매우 중요 -->
+    
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Placeat excepturi aperiam ea 
+        facere molestiae consequatur quisquam. Laudantium modi facere quae minima 
+        voluptatibus dolore molestiae delectus cupiditate beatae dolores, voluptates dicta?</pre>
+    <!-- 띄어쓰기나 줄바꿈을 그대로 보여주고 싶을때, 코드를 보여주고 싶을때 사용 -->
+
+</body>
+</html>
