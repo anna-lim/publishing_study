@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+<body>
+    <table border>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+        </tr>
+    </table>
+<!-- tr 행 / td 칸  -->
+
+<!-- scope=col / row / colgroup / rowgroup -->
+
+    <table border width="800px">
+        <caption>table title</caption>
+        <colgroup>
+            <col width="200">
+            <col width="200">
+            <col width="200">
+            <col>
+        </colgroup>
+        <!-- 브라우저마다 픽셀 차이가 있기 때문에 넷 다 지정하지말고 한두칸 비워두기 -->
+        <thead>
+            <tr>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+                <th scope="col">table header cell</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>            
+                <td rowspan="3">table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+           </tr>
+           <tr>            
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+            <tr>            
+                <!-- <td>table data cell</td> -->
+                <td>table data cell</td>
+                <td>table data cell</td>
+                <td>table data cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">result</th>
+                <td colspan="3">...</td>
+                <!-- <td>result</td> -->
+                <!-- <td>result</td> -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- table > caption / thead / tbody / tfoot (tbody만 필수) -->
+    <!-- th를 쓸 경우 scope 필수 / 방향을 지정해줘야 하는데 그게 col인지 row인지 구분해야함 -->
+    <!-- colspan / rowspan -> 칸합치기 -->
+
+
+
+</body>
+</html>
