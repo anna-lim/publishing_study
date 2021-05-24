@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    form 태그
+
+    <form action="go.php" method="post">
+        아이디 <input type="text" name="field">
+        <input type="submit" value=전송> 
+    </form>  
+    
+            <!-- submit:제출버튼 / value:라벨 / action:컨트롤을 만들어 전송 버튼을 누를 때 action에 연결된 파일로 전송됨 -->
+        <!-- mehtod
+            get: 주소표시줄에 입력한 name이 노출됨
+            post: 주소표시줄에 노출 X -->
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>fieldset legend</legend>
+        </fieldset>
+        <!-- 각각의 서식을 묶어주는 역할 -->
+        <p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </p>
+    </form>
+    
+</body>
+</html>
