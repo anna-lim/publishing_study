@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 form</title>
+</head>
+<body>
+
+    html5에서 추가된 input 콘트롤
+    email / url / number / range / date / search / color
+
+    disabled / placeholder / autofocus / required / autocomplete
+
+    <!-- novalidate->문법검증을 하지 않음 -->
+
+    <form action="" method="post" novalidate></form>
+    <fieldset>
+        <legend>html5 form</legend>
+        <p>
+            <label for="username">이름</label>
+            <input type="text" id="username" name="username" value="" disabled>
+        </p>
+        <p>
+            <label for="usermail"></label>
+            <input type="email" id="usermail" name="email" value="" placeholder="이메일을 입력해주세요.">
+        </p>
+        <p>
+            <label for="userurl">웹사이트 주소</label>
+            <input type="url" id="userurl" name="" value="" autofocus>
+        </p>
+        <p>
+            <label for="order">주문수량</label>
+            <input type="number" id="order" name="order" min="1" max="20" value="3" required>
+            <span>개</span>
+        </p>
+        <p>
+            <label for="userrange">길이</label>
+            <input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="50">
+        </p>
+        <p>
+            <label for="userdate">제출일</label>
+            <input type="date" name="userdate" id="userdate" min="2020-01-01" max="2022-01-01" value="2021-05-26">
+        </p>
+        <p>
+            <label for="usercolor">색상선택</label>
+            <input type="color" id="usercolor" name="usercolor" value="#ffffff">
+        </p>
+        <p>
+            <label for="usertel">연락처</label>
+            <input type="tel" name="usertel" id="usertel" autocomplete="off">
+        </p>
+
+        <!-- 모바일에서 tel이나 email 등을 사용하면 그거에 맞는 키보드입력창이 뜬다 -->
+        <!-- disabled을 fieldset에 쓰면 모두 disabled 상태로 됨 -->
+
+    </fieldset>
+    <input type="submit" value="send">
+    
+</body>
+</html>
