@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        body{
+            font-size: 12px;
+        }
+        h1, p{
+            text-decoration: underline;
+        }
+        p.lead{
+            color:green;
+        }
+        #lead{
+            background-color: lime;
+        }
+        #header > p > em {
+            border: 3px solid black;
+        }
+        /* >는 자식선택자, 바로 아래에 있는 것만 선택가능. 띄어쓰기는 아래에 있는 모든 것이 가능 */
+        .list li + li{
+            background-color: brown;
+        }
+
+        #header p + p{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<div id="wrap">
+    <div id="header">
+            <h1 class="lead">css selector</h1>
+            <p>Lorem, <em>Lorem, ipsum dolor.</em>ipsum dolor sit amet consectetur adipisicing elit. Quod amet exercitationem tempora magni nihil ducimus minima aspernatur aliquam blanditiis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis doloribus iusto illum?</p>
+    </div>
+    <div id="content">    
+        <p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolor ab maxime illo officiis unde natus reprehenderit nihil!</p>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, a porro dolor voluptates sed minima odit blanditiis natus quod numquam illum, nesciunt, eos quae perferendis voluptatem reprehenderit libero odio obcaecati. Rerum maxime accusantium temporibus inventore minus aliquam consequuntur blanditiis maiores aut. Commodi architecto veniam ipsum sint unde expedita. Error laudantium vel temporibus nobis deserunt recusandae, impedit perspiciatis pariatur beatae, sint commodi, explicabo esse officia earum voluptas ipsum dolor asperiores excepturi illum quia laborum vitae? Optio numquam doloremque illum dignissimos accusamus maiores eos laboriosam, exercitationem laborum, tempora a quia totam inventore debitis incidunt aliquam labore aperiam. Sed, voluptatum unde!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a repellat exercitationem officiis qui dicta voluptates molestias provident quos beatae blanditiis atque earum sequi labore quibusdam delectus, illum incidunt asperiores aliquam ex velit ea eius sit ducimus! Architecto nisi quaerat quidem neque officiis esse molestiae dolor, temporibus ducimus aperiam iusto nesciunt? Iste aspernatur asperiores hic modi fugit tempora, recusandae eos quos eaque assumenda omnis, cumque unde? Est perferendis molestias necessitatibus fugiat, dolorum tempore reiciendis saepe hic sequi rem amet possimus quisquam soluta assumenda inventore vero dicta illum voluptatum sit. Veritatis, nemo dolore. Maiores, officia dolores? Nobis sapiente quo commodi optio?</p>
+        <ol class="list">
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        </ol>
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod amet exercitationem tempora magni nihil ducimus minima aspernatur aliquam blanditiis.</p>
+    </div>
+</div>
+
+</body>
+</html>
