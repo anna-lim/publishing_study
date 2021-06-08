@@ -29,6 +29,32 @@
         #header p + p{
             background-color: yellow;
         }
+        a[title] {
+            background-color: blueviolet;
+            color: wheat;
+        }
+        /* 같은 태그중에서 같은 속성만 */
+        a[href ^= 'http://'] {
+            background-color: black;
+            color: yellow;
+        }
+        /* href의 값중 ~로 시작하는걸 찾는다 */
+        a[href $= '.pdf'] {
+            background-color: yellowgreen;
+            color: tomato;
+        }
+            /* href의 값중 ~로 끝나는걸 찾는다 */
+        li[title ~= 'text'] {
+            background-color: teal;
+        }
+        /* 완전한 단어를 써야만 적용이 됨 / 어디에 있던지 단어만 매칭되면 적용 */
+        li[title *= 'te'] {
+            background-color: teal;
+        }
+        /* 단어에 포함되는 일부만 써도 적용이 됨  */
+        li[title |="ja"] {
+            border-bottom: 2px solid red;
+        }
     </style>
 </head>
 <body>
@@ -44,13 +70,24 @@
         <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, a porro dolor voluptates sed minima odit blanditiis natus quod numquam illum, nesciunt, eos quae perferendis voluptatem reprehenderit libero odio obcaecati. Rerum maxime accusantium temporibus inventore minus aliquam consequuntur blanditiis maiores aut. Commodi architecto veniam ipsum sint unde expedita. Error laudantium vel temporibus nobis deserunt recusandae, impedit perspiciatis pariatur beatae, sint commodi, explicabo esse officia earum voluptas ipsum dolor asperiores excepturi illum quia laborum vitae? Optio numquam doloremque illum dignissimos accusamus maiores eos laboriosam, exercitationem laborum, tempora a quia totam inventore debitis incidunt aliquam labore aperiam. Sed, voluptatum unde!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt a repellat exercitationem officiis qui dicta voluptates molestias provident quos beatae blanditiis atque earum sequi labore quibusdam delectus, illum incidunt asperiores aliquam ex velit ea eius sit ducimus! Architecto nisi quaerat quidem neque officiis esse molestiae dolor, temporibus ducimus aperiam iusto nesciunt? Iste aspernatur asperiores hic modi fugit tempora, recusandae eos quos eaque assumenda omnis, cumque unde? Est perferendis molestias necessitatibus fugiat, dolorum tempore reiciendis saepe hic sequi rem amet possimus quisquam soluta assumenda inventore vero dicta illum voluptatum sit. Veritatis, nemo dolore. Maiores, officia dolores? Nobis sapiente quo commodi optio?</p>
         <ol class="list">
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li lang="en">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li lang="zh">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li lang="ja">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
             <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
         </ol>
+        <ul>
+            <li><a href="http://daum.net">daum</a></li>
+            <li><a href="http://naver.com">naver</a></li>
+            <li><a href="mailto: help@hheellpp.com" title="mail">help</a></li>
+            <li><a href="file/download.pdf">download</a></li>
+            <li title="some">Lorem ipsum dolor sit amet consectetur.</li>
+            <li title="text">Lorem ipsum dolor sit amet consectetur.</li>
+            <li title="sample">Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            
+        </ul>
        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod amet exercitationem tempora magni nihil ducimus minima aspernatur aliquam blanditiis.</p>
     </div>
 </div>
