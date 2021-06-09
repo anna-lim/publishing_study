@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector2</title>
+    <style>
+        /* a:link {
+            color: green;
+            text-decoration: underline;
+        }
+        a에 링크가 걸려있는 상태
+
+        a:visited {
+            color: gray;
+            text-decoration: underline;
+        }
+        a를 방문한 상태
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: orange;
+            text-decoration: underline;
+        }
+        
+        a:focus {
+            background-color: red;
+        }
+        쓸때는 이 순서를 지켜서 쓰기 */
+
+        a {
+            color: orange;
+            text-decoration: none; 
+        }
+
+        a:hover, a:active, a:focus {
+            color: red;
+            text-decoration: underline;
+        }
+        
+        .lead:first-line {
+            background-color: lime;
+        }
+        /* 항상 첫줄에만 효과가 들어감 */
+
+        .lead:first-letter {
+            font-size: 5em;
+        }
+        /* 첫번째 글자에만 효과가 들어감 */
+
+        h1:before {
+            content: 'before area' ;
+        }
+        /* h1이 시작하는 부분 */
+        
+        h1::after {
+            content: 'after area' ;
+        }
+        /* h1이 끝나는 부분 */
+
+        div {background-color: orchid;}
+        .sample {background-color: paleturquoise;}
+        #sample {background-color: purple;}
+        /* 선택자의 우선순위는 순서에 관련이 없다. 같은 순위일때만 순서의 영향을 받음 */
+        /* inline style > id > class > type */
+
+        div {background-color: slateblue !important} 
+        /* important는 무조건 적용되는 값 */
+
+    </style>
+</head>
+<body>
+    <h1>css selector</h1>
+    <p class="lead"><a href="http://naver.com">Lorem, ipsum dolor sit amet consectetur adipisicing </a>elit. Numquam neque aperiam, nulla eveniet dolores eaque doloribus inventore, accusamus maxime repudiandae quibusdam. Aliquid facere rerum alias dignissimos qui dolorem similique impedit ipsum? Ab, nesciunt. Qui inventore voluptates similique. <a href="">aboriosam nemo repudiandae assumenda consequatur alias? Lorem ipsum,</a>L dolor sit amet consectetur adipisicing elit. Distinctio vero animi, reiciendis magnam similique praesentium! Iste maxime quos dignissimos ad repudiandae maiores.</p>
+    <hr>
+    <div class="sample" id="sample" style="background-color: salmon;">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam minus natus excepturi numquam sed? Natus nobis vero itaque aut, veniam, dignissimos aliquam obcaecati ab explicabo nam voluptatibus enim, nisi omnis similique cum harum non? Perspiciatis, itaque inventore sint adipisci minima est modi laborum unde facere repellendus, tempore reprehenderit facilis a aliquid deleniti earum! Eaque inventore veniam quas assumenda voluptatum provident reiciendis commodi odio molestias enim!
+    </div>
+</body>
+</html>
