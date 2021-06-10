@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font / text</title>
+    <style>
+        body, h1, h2 {
+            font-family: '돋움', dotum, helvetica, sans-serif;
+            /* font-family: 'malgun gothic', helvetica, sans-serif; */
+            font-size: 12px;
+        }
+
+        h1 {
+            background-color: darkcyan;
+            font-size: 2.5em;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            /* uppercase(대문자) | lowercase(소문자) | capitalize(첫글자 대문자) */
+        }
+        
+        h1 small {
+            font-size: 0.5em;
+            background-color: burlywood;
+            vertical-align: middle;
+            /* top | middle | baseline | bottom */
+        }
+
+        address {
+            font-style: normal;
+        }
+        /* normal | italic | oblique */
+        
+        h2 {
+            color:aquamarine;
+            font-variant: small-caps;
+            /* 대문자는 그대로고, 소문자였던 글자가 대문자로 변함 */
+            font-size: 2em;
+            text-decoration: line-through;
+            /* line-through(취소선) | underline(밑줄) | overline(윗줄) | none */
+        }
+
+        .lead {
+            font-size: 1.2em;
+            font-weight: 600;
+            /* bold | bolder | 600 | 700 | 800 | 900 */
+            /* normal | lighter | 100 | 200 | 300 | 400 | 500  */
+            word-spacing: 1em;
+            /* 단어와 단어 사이 간격을 주고 싶을때  */
+        }
+
+
+        .text {
+            text-indent: 1em;
+            /* 텍스트 들여쓰기 */
+            line-height: 1.6;
+            text-align: center;
+            /* left | center | right | justify */
+            /* white-space: nowrap; */
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <h1>style sample <small>sample</small></h1>
+        <h2>Style example (font-variant)</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum aliquid voluptatem ratione.</p>
+        <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nesciunt rem accusamus nobis repellat ipsum, temporibus consequuntur earum aspernatur omnis sunt exercitationem, labore enim aliquid asperiores quo eos consectetur molestias deserunt fugiat sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nesciunt rem accusamus nobis repellat ipsum, temporibus consequuntur earum aspernatur omnis sunt exercitationem, labore enim aliquid asperiores quo eos consectetur molestias deserunt fugiat sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nesciunt rem accusamus nobis repellat ipsum, temporibus consequuntur earum aspernatur omnis sunt exercitationem, labore enim aliquid asperiores quo eos consectetur molestias deserunt fugiat sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et repudiandae nesciunt rem accusamus nobis repellat ipsum, temporibus consequuntur earum aspernatur omnis sunt exercitationem, labore enim aliquid asperiores quo eos consectetur molestias deserunt fugiat sapiente?</p>
+        <hr>
+        <address>add : Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, fuga.</address>
+    </div>
+
+</body>
+</html>
