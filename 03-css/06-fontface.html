@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font face</title>
+    <style>
+        @font-face{
+        font-family: NGothic;
+            src:url(fonts/NanumGothic.eot);
+            src:url(fonts/NanumGothic.eot?#iefix) format('embedded-opentype'),
+                url(fonts/NanumGothic.woff) format('woff'),
+                url(fonts/NanumGothic.ttf) format('truetype')
+        }
+        body {
+            font-size: 20px;
+        }
+
+        .nanum {
+            font-family: ngothic, sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>@font-face</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab explicabo assumenda Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias optio repudiandae perspiciatis error libero quam, cum voluptatem incidunt iste?.
+    </p>
+    <p class="nanum">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab explicabo assumenda Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias optio repudiandae perspiciatis error libero quam, cum voluptatem incidunt iste?.
+    </p>
+    <p class="nanum">
+        일러스트레이터와 포토샵 중에 어느 게 더 좋은 걸까요? 여러분이 업계의 신참 디자이너거나 관련 업종에서 종사하지 않는다면, 두 프로그램 사이의 차이가 무엇인지, 그리고 언제 어떤 용도로 사용해야 하는 것인지 잘 모를 수 있습니다. 일러스트레이터와 포토샵 모두 그래픽 디자인에 있어서는 아주 유명하며 필수적인 소프트웨어인데요.
+    </p>
+</body>
+</html>
