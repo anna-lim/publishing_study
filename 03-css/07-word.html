@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-break, white-space</title>
+    <style>
+        body {
+            font-family: 'malgun gothic', sans-serif;
+            font-size: 16px;
+        }
+
+        .content, .content2, .content3{
+            width: 500px;
+            border: 3px solid red;
+        }
+
+        .content p{
+            word-break: break-all;
+        }
+
+        .content2 p{
+            text-align: justify;
+        }
+
+        .content3 p{
+            text-align: justify;
+            word-break: break-all;
+        }
+        /* word-break: 띄어쓰기 없는 단어를 띄어쓸 수 있도록 정렬해주는 기능 */
+        /* 양쪽정렬할때 word-break쓰면 단어 중간에서도 띄어쓰기가 됨 */
+
+        .white1 {
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre;
+        }
+        /* white-space: no-wrap */
+        /* white-space: pre -> 줄바꿈이 따로 태그적용을 하지 않아도 그대로 적용됨 */
+
+        .white2 {
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre-wrap;
+        }
+        /* pre-wrap을 쓰면 긴 문장은 자동으로 줄바꿈이 됨 */
+
+        .white3 {
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre-line;
+        }
+        /* pre-line: 앞 공백도 없애줌  */
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>
+         LoremipsumdolorsitametconsecteturadipisicingelitArchitectoerspiciatisblanditiisumquemodiaperiamundequasiliberoreiciendisditinventoredicta!LaboreaspernaturnesciuntreprehenderitimpeditMolestiasadidrepel lendusfacilisdolorevelnobisnostrum?
+        </p>
+    </div>
+    <div class="content2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est fuga laudantium sequi? Officiis voluptatibus magnam quas quo quasi nesciunt consequuntur natus ratione ipsam numquam in soluta, consectetur deleniti at, aliquid molestias dolorum delectus beatae enim dolore fugiat neque vel? Illum placeat quod accusantium unde nostrum, quidem veritatis ex ab at minima voluptatem voluptate laudantium illo dignissimos vel possimus ratione cumque reprehenderit voluptatibus quo distinctio atque totam eum? Obcaecati earum non vel qui corrupti accusantium distinctio eius libero error alias, cupiditate eos. Necessitatibus accusamus placeat in blanditiis dolore, facere, beatae tenetur aperiam fuga nam at doloremque repudiandae adipisci reiciendis nemo. 
+        </p>
+    </div>
+    <div class="content3">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis est fuga laudantium sequi? Officiis voluptatibus magnam quas quo quasi nesciunt consequuntur natus ratione ipsam numquam in soluta, consectetur deleniti at, aliquid molestias dolorum delectus beatae enim dolore fugiat neque vel? Illum placeat quod accusantium unde nostrum, quidem veritatis ex ab at minima voluptatem voluptate laudantium illo dignissimos vel possimus ratione cumque reprehenderit voluptatibus quo distinctio atque totam eum? Obcaecati earum non vel qui corrupti accusantium distinctio eius libero error alias, cupiditate eos. Necessitatibus accusamus placeat in blanditiis dolore, facere, beatae tenetur aperiam fuga nam at doloremque repudiandae adipisci reiciendis nemo. 
+        </p>
+    </div>
+    <hr>
+    <div class="white1">
+        lorem
+        Lorem ipsum dolor sit.
+        consectefer.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores possimus voluptatem officiis modi illum, reprehenderit, nobis quod ea minima suscipit non quibusdam? Repellendus aut eveniet fuga rerum.
+    </div>
+    <div class="white2">
+        lorem
+        Lorem ipsum dolor sit.
+        consectefer.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores possimus voluptatem officiis modi illum, reprehenderit, nobis quod ea minima suscipit non quibusdam? Repellendus aut eveniet fuga rerum.
+    </div>
+    <div class="white3">
+        lorem
+        Lorem ipsum dolor sit.
+        consectefer.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores possimus voluptatem officiis modi illum, reprehenderit, nobis quod ea minima suscipit non quibusdam? Repellendus aut eveniet fuga rerum.
+    </div>
+</body>
+</html>
