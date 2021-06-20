@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        } /* 스타일의초기화 */
+
+        /* 
+        boxmodels
+            content - width | height
+            border -
+            padding
+            margin
+        */
+
+        .box{
+            width: 600px;
+            /* border: 5px solid black; */
+            /* padding: 20px; */
+            margin: 30px;
+            background-color: cadetblue;
+        }
+
+        .box2 {
+            border: 5px solid black;
+            padding: 20px;
+        }
+
+        .box3 {
+            box-sizing: border-box;
+        }
+        /* padding이나 border를 추가해도 크기가 늘어나지 않고 안에서 먹힘 */
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+    <div class="box box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+    <!-- 클래스는 띄어쓰기를 할 수 있음. 여러캐의 클래스 중복 적용 가능 -->
+    <div class="box box2 box3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+</body>
+</html>

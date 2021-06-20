@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        } /* 스타일의초기화 */
+        
+        .box {
+            /* display: inline; */
+            /* inline일 경우 마진은 좌우만 적용 - 박스모델은 블록태그에만  */
+            margin: 20px;
+            /* 겹친 부분은 겹치게 나옴 */
+            
+            background-color: lime;
+            padding: 20px;
+            border: 2px dashed darkblue;
+            /* border-style : solid | dashed | dotted | double | inset | outset | ridge | groove */
+            /* border-color */
+            /* border-width */
+
+            /* top bottom | right left */
+            /* top | right left | bottom */
+            /* top right bottom left */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat obcaecati, perferendis voluptate debitis eius ad totam doloremque animi ut minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ipsum quo, commodi vitae totam, cum asperiores nisi cupiditate delectus quis veritatis officia eum consequatur sint vero enim. Iure eos quibusdam illo voluptatum?
+    </div>
+</body>
+</html>
