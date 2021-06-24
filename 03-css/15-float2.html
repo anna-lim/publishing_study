@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        body {
+            font: 12px/1.6 'malgun gothic', sans-serif;
+            /* font: weight style variant size/line height family  */
+            /* font: size family */
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .wrap {
+            width: 600px;
+            margin: 0 auto; /* 중간정렬 */
+        }
+
+        .wrap h1 {
+            padding: 15px 0;
+        }
+
+        .wrap .text {
+            clear: left;
+            /* left | right | both */
+        } 
+
+        .wrap .thumb {
+            border: 3px solid saddlebrown;
+            float: left;
+            margin: 15px 0 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>float example</h1>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=1" alt="example"></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=2" alt="example"></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=3" alt="example"></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=4" alt="example"></p>
+        <div class="text"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia earum libero qui debitis voluptate ullam nesciunt esse nobis quaerat nisi eum, quam olorem2mnis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim non vel iste quaerat incidunt, exercitationem doloremque voluptas ut beatae at a minus nihil voluptate eligendi in repudiandae deserunt quidem ducimus aut? Fugit, iure tenetur.</p></div>
+    </div>
+</html>
