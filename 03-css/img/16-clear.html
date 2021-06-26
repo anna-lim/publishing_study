@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            vertical-align: top;
+        }
+
+        .area {
+            width: 800px;
+            margin: 0 auto;
+            border: 3px dashed red;
+            *zoom: 1;
+            /* IE / Chrome */
+        }
+
+        .area:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        
+        .area .thumb {
+            float: left;
+            border: 3px solid black;
+        }
+
+        .cls {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="area">
+        <div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+        <div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+        <div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+        <div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+        <div class="thumb"><img src="http://placehold.it/100x120?text=5" alt=""></div>
+        <!-- clear 위치 -->
+    </div>
+    <p class=cls> 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aliquid nemo quo, magnam eveniet itaque excepturi reprehenderit voluptate facere quaerat nobis praesentium ipsa sapiente necessitatibus enim iusto quibusdam accusamus velit? Maxime accusantium libero rerum nisi labore perspiciatis autem vero sit? Autem delectus odit obcaecati pariatur fugit, consectetur ipsum nesciunt at quasi perferendis dignissimos! Rem dolorum aspernatur inventore adipisci dicta assumenda ea distinctio esse, eius velit ratione iusto aliquid? Provident vitae perspiciatis voluptates dolorem nemo nihil quaerat consectetur suscipit sunt, amet neque porro sit autem delectus assumenda eveniet saepe, iure quae odio. Error exercitationem sit molestias, eum ducimus molestiae! Fugiat, ipsa? Beatae amet soluta, labore ipsam fugiat neque eligendi excepturi cupiditate ullam officiis voluptas aliquid dolor sapiente provident! Hic rerum aliquam laboriosam amet quod.
+    </p>
+    
+</body>
+</html>
