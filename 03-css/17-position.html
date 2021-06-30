@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .box {
+            /* position - relative | absolute | fixed | static */
+            width: 400px;
+            padding: 20px;
+            border: 5px solid black;
+            background-color: rgba(255,0,0,.5);
+            font: 12px/1.6 verdana, sans-serif;
+        }
+
+        .area {
+            position: relative;   
+            border: 3px dotted red;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .box:first-letter {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgba(255,0,0,.5);
+            }
+        .b {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            background-color: rgba(0,255,0,.5);
+            }
+        .c {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            background-color: rgba(0,0,255,.5);
+            }
+    </style>
+</head>
+<body>
+    <div class="area">
+        <div class="box a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et officia cupiditate recusandae? Officiis, ratione! Cupiditate mollitia obcaecati explicabo maiores.
+        </div>
+        <div class="box b">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et officia cupiditate recusandae? Officiis, ratione! Cupiditate mollitia obcaecati explicabo maiores.
+        </div>
+        <div class="box c">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, doloremque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus et officia cupiditate recusandae? Officiis, ratione! Cupiditate mollitia obcaecati explicabo maiores.
+        </div>
+    </div>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum beatae esse deleniti ipsum quia maxime aliquid explicabo, deserunt, vitae ducimus porro eaque molestiae cupiditate facere incidunt a, velit dicta inventore! Fugiat neque eveniet aut doloremque eligendi tenetur. Accusantium delectus consequuntur unde nesciunt, fugit eos, earum reiciendis aperiam iusto itaque necessitatibus explicabo possimus numquam expedita, quidem odio placeat. Culpa officiis tenetur commodi. Nemo incidunt molestias eaque modi officiis illo commodi quaerat eos amet! Mollitia repellat odit, tempora eos facilis sunt a nostrum reiciendis, tenetur accusamus consequatur similique reprehenderit? Distinctio eaque ullam a illum iste natus accusamus ratione dolorem excepturi impedit, reprehenderit fugiat temporibus quisquam ut eveniet maxime similique sunt fugit quasi voluptas ex. Officiis rerum blanditiis dolor vero, adipisci possimus, id, reprehenderit consectetur maxime quos iusto iure illo placeat incidunt. Asperiores debitis officia quo similique animi reprehenderit voluptas illum corrupti quis pariatur nam, vel natus, consectetur quos fuga quod magni sapiente beatae possimus sunt odio autem! In debitis ea, adipisci nisi asperiores saepe. Exercitationem veritatis voluptatibus illum minus velit odit et alias labore eveniet quae recusandae doloremque optio inventore, facilis, perspiciatis dolorem quisquam dolore excepturi non nisi magnam reprehenderit consectetur officiis? Fuga fugiat nam a sapiente harum id odio aspernatur voluptatum?</p>
+</body>
+</html>
