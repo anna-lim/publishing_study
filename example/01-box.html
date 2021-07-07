@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        body,h1,h2,h3,p {
+            margin: 0;
+            padding: 0;
+        }
+        body,h1,h2,h3,input,select,textarea,button,th,td {
+            font-family: 'malgun gothic', sans-serif;
+            font-size: 12px;
+        }
+    </style>
+    <style>
+        .section {
+            position: relative;
+            margin: 20px;
+            border: 1px solid #ccc;
+        }
+        .section .hx {
+            border: 1px solid #fff;
+            padding: 8px;
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .section .tx {
+            border-top: 1px solid #ccc;
+            padding: 8px;
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.5em;
+        }
+        .section .section_more {
+            position: absolute;
+            right: 8px;
+            top: 10px;
+        }
+        .section .section_more a {
+            position: relative;
+            text-decoration: none;
+            color: #666;
+            letter-spacing: -0.5px;
+        }
+        .section .section_more a .ico {
+            position: absolute;
+            left: -9px;
+            top: 2px;
+            display: block;
+            width: 0px;
+            height: 0px;
+            border: 10px solid red;
+            border-width: 5px 0 5px 5px;
+            border-color: transparent transparent transparent #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2 class="hx">제목</h2>
+        <div class="tx">내용</div>
+        <div class="tx">내용</div>
+        <div class="tx">내용</div>
+        <div class="tx">내용</div>
+        <div class="tx">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio maiores iste optio doloribus corporis suscipit quaerat, facilis ipsum repellendus debitis facere blanditiis quae. Vero laudantium vitae autem et ad magnam maiores cupiditate maxime, reiciendis quas iure culpa incidunt est corporis non nemo ducimus. Aperiam sint tempora iusto facere beatae quibusdam. Eveniet odio incidunt consectetur corrupti, soluta doloremque cum, a voluptates autem eligendi libero ratione facere? Ad non placeat itaque cumque omnis accusamus asperiores sunt expedita laboriosam modi. Dolore impedit perferendis tempore exercitationem eius fugiat, debitis temporibus, odit quod soluta deleniti recusandae suscipit veritatis fuga. Fugiat non atque aperiam.</div>
+        <div class="tx">이날 확진자가 나온 지역을 보면 수도권이 911명(81.9%), 비수도권이 202명(18.1%)이다.
+            시도별로는 서울 536명, 경기 316명, 인천 59명, 충남 57명, 부산 49명, 제주 17명, 대구·강원 각 15명, 대전 12명, 울산 9명, 경남 8명, 충북 6명, 전남·경북 각 4명, 전북 3명, 광주 2명, 세종 1명 등이다.
+            집계를 마감하는 자정까지 아직 시간이 남은 만큼 8일 0시 기준으로 발표될 신규 확진자 수는 이보다 더 늘어 적게는 1천100명대 중후반, 많으면 1천200명을 넘을 것으로 보인다
+            전날에는 오후 9시 이후 67명 늘어 최종 1천212명으로 마감됐다.</div>
+        <div class="tx">내용</div>
+        <p class="section_more"><a href="#"><span class="ico"></span>더보기</a></p>
+    </div>
+</body>
+</html>
