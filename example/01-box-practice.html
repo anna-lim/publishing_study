@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        body,h1,h2,h3,p {
+            margin: 0;
+            padding: 0;
+        }
+        body,h1,h2,h3,input,select,textarea,button,th,td {
+            font-family: 'malgun gothic', sans-serif;
+            font-size: 12px;
+        }
+
+        .wrap {
+            position: relative;
+            margin: 20px;
+            border: 1px solid #ddd;
+        }
+        .wrap .title {
+            background-color: #f8f8f8;
+            padding: 8px;
+            border: 1px solid #fff;
+            font-weight: bold;
+        }
+        .content {
+            padding: 8px;
+            border-top: 1px solid #ddd;
+            background-color: #fff;
+        }
+        .wrap .section_more {
+            position: absolute;
+            right: 8px;
+            top: 10px;
+        }
+        .section_more a {
+            text-decoration: none;
+            color: 6c6c6c;
+        }
+        .section_more a .more {
+            margin-right: 4px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+            <h2 class="title">제목</h2>
+            <div class="content">내용</div>
+            <p class="section_more"><a href="#"><span class="more"><img src="img/next.png"></span>더보기</a></p>
+    </div>
+</body>
+</html>
