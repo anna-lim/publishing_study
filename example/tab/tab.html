@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab menu</title>
+    <style>
+                /* reset */
+                html,body{width:100%; height:100;}
+        body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin: 0; padding: 0;}
+        body,input,textarea,select,button,table{font-family: 'Malgun gothic ',Dotum,Applegothic,sans-serif; font-size: 12px;}
+        img,fieldset{border: 0;}
+        ul,ol{list-style: none;}
+        em,address{font-style: normal;}
+        a{text-decoration: none;}
+        a:hover,a:active,a:focus{text-decoration: none;}
+
+        /* style */
+        .wrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .tab_list {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        .tab_list li.m1,
+        .tab_list li.m2,
+        .tab_list li.m3 {
+
+        }
+
+        .tab_list li.m1 > a,
+        .tab_list li.m2 > a,
+        .tab_list li.m3 > a {
+            display: block;
+            height: 35px;
+            padding: 0 30px;
+            line-height: 35px;
+            background-color: #eee;;
+            border: 1px solid #aaa;
+            color: #666;
+            font-size: 13px;
+            float: left;
+        }
+
+        .tab_list li.m1 ul,
+        .tab_list li.m2 ul,
+        .tab_list li.m3 ul {
+            position: absolute;
+            left: 0;
+            top: 36px;
+            border-top: 1px solid #aaa;
+            width: 100%;
+        }
+
+
+        .tab_list li.m1 .more,
+        .tab_list li.m2 .more,
+        .tab_list li.m3 .more {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="tab_list">
+            <ul>
+                <li class="m1">
+                    <a href="#"><span>공지사항</span></a>
+                    <ul>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
+                    </ul>
+                    <p class="more"><a href="#">공지사항 더보기</a></p>
+                </li>
+                <li class="m2">
+                    <a href="#"><span>보도자료</span></a>
+                    <ul>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
+                    </ul>
+                    <p class="more"><a href="#">보도자료 더보기</a></p>
+                </li>
+                <li class="m3">
+                    <a href="#"><span>해명자료</span></a>
+                    <ul>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
+                    </ul>
+                    <p class="more"><a href="#">해명자료 더보기</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
