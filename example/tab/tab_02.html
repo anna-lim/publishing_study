@@ -78,15 +78,29 @@
         .tab_list li.m1 ul li,
         .tab_list li.m2 ul li,
         .tab_list li.m3 ul li {
+            overflow: hidden;
             margin-bottom: 6px;
             line-height: 1.5;
+            border-bottom: 1px dashed #666;
+            padding-bottom: 4px;
         }
 
         .tab_list li.m1 ul li a,
         .tab_list li.m2 ul li a,
         .tab_list li.m3 ul li a{
+            float: left;
             color: black;
         }
+
+        .tab_list li.m1 ul li span,
+        .tab_list li.m2 ul li span,
+        .tab_list li.m3 ul li span{
+            float: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 11px;
+            color: black;
+        }
+
 
         .tab_list li.m1.active ul,
         .tab_list li.m2.active ul,
@@ -122,30 +136,30 @@
     <div class="wrap">
         <div class="tab_list">
             <ul>
-                <li class="m1 active">
+                <li class="m1 ">
                     <a href="#"><span>공지사항</span></a>
                     <ul>
-                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a><span>2021-07-25</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a><span>2021-07-25</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 공지사항 목록입니다.</a><span>2021-07-25</span></li>
                     </ul>
                     <p class="more"><a href="#">공지사항 더보기</a></p>
                 </li>
-                <li class="m2">
+                <li class="m2 active">
                     <a href="#"><span>보도자료</span></a>
                     <ul>
-                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a><span>2021-07-27</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a><span>2021-07-27</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 보도자료 목록입니다.</a><span>2021-07-27</span></li>
                     </ul>
                     <p class="more"><a href="#">보도자료 더보기</a></p>
                 </li>
                 <li class="m3">
                     <a href="#"><span>해명자료</span></a>
                     <ul>
-                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
-                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a></li>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a><span>2021-07-29</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a><span>2021-09-29</span></li>
+                        <li><a href="#">이것은 첫번째 탭의 해명자료 목록입니다.</a><span>2021-10-29</span></li>
                     </ul>
                     <p class="more"><a href="#">해명자료 더보기</a></p>
                 </li>

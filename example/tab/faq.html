@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faq</title>
+    <style>
+        /* reset */
+        html,body{width:100%; height:100;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin: 0; padding: 0;}
+body,input,textarea,select,button,table{font-family: 'Malgun gothic ',Dotum,Applegothic,sans-serif; font-size: 12px;}
+img,fieldset{border: 0;}
+ul,ol{list-style: none;}
+em,address{font-style: normal;}
+a{text-decoration: none;}
+a:hover,a:active,a:focus{text-decoration: none;}
+
+/* style */
+
+        .faq{
+            width: 600px;
+            margin: 0 auto;
+
+        }
+        
+        .faq .hgroup{
+            *zoom: 1;
+        }
+
+        .faq .hgroup:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .faq .hgroup .h2{
+            float: left;
+            padding: 15px 0;
+        }
+
+        .faq .hgroup button{
+            float: right;
+            margin: 18px 0 0 0;
+            border: 0;
+            background: none;
+            cursor: pointer;
+            letter-spacing: -1px;
+        }
+
+        .faq .faq_list{
+            border-top: 1px solid #ccc;
+        }
+        
+        .faq .faq_list dt a{
+            display: block;
+            color: #666;
+            padding: 8px 10px;
+            /* border-top: 1px solid #ccc; */
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        .faq .faq_list dt a:hover{
+            background-color: #eee;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .faq .faq_list dt.active a{
+            border-bottom: none;
+            background-color: #eee;
+            color: #222;
+            font-weight: bold;
+        }
+
+        .faq .faq_list dd{
+            display: none;
+            padding: 0px 10px;
+            color: #666;
+            line-height: 1.5;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .faq .faq_list dd.active{
+            display: block;
+        }
+
+        .faq .faq_list dd p{
+            margin: 8px 0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="faq">
+        <div class="hgroup">
+            <h2>FAQ</h2>
+            <button type="button"><span>답변 모두 여닫기</span></button>
+        </div>
+        <dl class="faq_list">
+            <dt><a href="#a1">Q. 질문과 답변 목록은 무엇으로 마크업해야 하나요?</a></dt>
+            <dd id="a1"><p>A: 비 순차 목록 순차 목록 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 질문과 답변을 무엇으로 마크업 할건지에 대해서는 많은 고민이 필요합니다.</p></dd>
+            <dt class="active"><a href="#a2">Q. 질문과 답변 목록은 무엇으로 마크업해야 하나요?</a></dt>
+            <dd id="a2" class="active"><p>A: 비 순차 목록 순차 목록 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 질문과 답변을 무엇으로 마크업 할건지에 대해서는 많은 고민이 필요합니다.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quibusdam, et architecto vitae blanditiis ratione eum ipsam quas accusamus ut doloribus repudiandae placeat obcaecati voluptate sit nesciunt officia cumque sequi odit facilis voluptas in. Iure ad dicta tempore sint ex nisi cupiditate, sit commodi corrupti atque, ipsam, labore voluptatum nemo perspiciatis voluptatem quia autem. Obcaecati itaque libero nulla commodi. Consectetur consequatur eum eligendi libero illum cupiditate ut magni cumque repudiandae nesciunt, obcaecati beatae reprehenderit deserunt inventore atque. Saepe, sint. Voluptates molestias maiores corporis odit magnam labore dolor, non, suscipit asperiores quod soluta quasi nostrum aperiam tempora, inventore aut minus.</p></dd>
+            <dt><a href="#a3">Q. 질문과 답변 목록은 무엇으로 마크업해야 하나요?</a></dt>
+            <dd id="a3"><p>A: 비 순차 목록 순차 목록 정의 목록으로 마크업 할 수 있습니다. 더 나아가 각각의 항목 안에서 질문과 답변을 무엇으로 마크업 할건지에 대해서는 많은 고민이 필요합니다.</p></dd>
+        </dl>
+    </div>
+    
+</body>
+</html>
